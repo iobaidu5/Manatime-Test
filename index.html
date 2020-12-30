@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Manatime</title>
+</head>
+<body class="body">
+    <header class="header">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="burger-toggle-main">
+            <div class="burger-btn">
+               
+              <a href="#" style="margin:auto;" id="sidebarCollapse">
+                    <img src="/images/Burger button.svg" /> 
+                  </a>    
+            </div>
+          </div>
+
+            <div class="navbar-content">
+                <img src="/images/Absence_Icon.svg" alt="Absence-icon" class="absence-icon" style="margin: 0 30px;"/>
+                <span class="absence">Absence</span>
+                <img src="/images/stripe2.svg" class="stripe2" />
+                <img src="/images/Soldes.svg" class="soldes" />
+                <span class="sous-module">Sous module</span>
+                <img src="/images/stripe2.svg" class="stripe2" />
+                <span class="sous-sous">Sous sous module</span>
+                <div class="right-content">
+                    <img src="/images/Help.svg" class="help-icon" />
+                    <img src="/images/Settings.svg" class="settings-icon" />
+        
+                    <span class="v1"></span>
+                    <div class="person" style="margin-top: 5px;">
+                        <p class="name">Nom et Prenom</p>
+                        <p class="designation">Enterprise</p>
+                    </div>
+                    <div class="image">
+                    <img src="/images/Photo.png" class="person-photo" />
+                    <div class="online"></div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+
+            
+        </nav>
+    </header>
+    
+    <!--Sidebar Menu-->
+        <div class="wrapper">
+	     <nav id="sidebar">
+     
+            <ul class="lisst-unstyled components">
+                <li style="background-color: #0090F5; margin-bottom: 0px; padding-top: 5px;">
+                    <a href="#"><img src="/images/Accueil.svg" />Accueil</a>
+                </li>
+             
+                 <li style="background-color: #0090F5; margin-bottom: 0px;">
+                    <a href="#"><img src="/images/Add.svg" />Ajouter</a>
+                </li>
+                
+            
+
+                 <li>
+                    <a href="#monSubmenu" data-toggle="collapse" aria-expanded="false" class="">
+                        <img src="/images/Mon espace.svg" />
+                            Mon espace
+                        <img src="//images/Stripe.svg" class="stripe" />
+                    </a>
+                    
+                    <ul class="collapse list-unstyled" id="monSubmenu">
+                        <li>
+                            <a href="#">Mon espace 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Mon espace 2</a>
+                        </li>
+        
+                    </ul>
+                </li>
+                 
+                 <li>
+                     <a href="#validationSubmenu" data-toggle="collapse" aria-expanded="false" class="">
+                        <img src="/images/Validation.svg" />
+                         Validation
+                        <img src="//images/Stripe.svg" class="stripe" />
+                     </a>
+                     <ul class="collapse list-unstyled" id="validationSubmenu">
+                         <li>
+                             <a href="#">Validation 1</a>
+                         </li>
+                         <li>
+                             <a href="#">Validation 2</a>
+                         </li>
+                     </ul>
+                 </li>
+
+                 <li>
+                    <a href="#IndicateursSubmenu" data-toggle="collapse" aria-expanded="false" class="">
+                       <img src="/images/Indicateurs.svg" />
+                        Indicateurs
+                       <img src="//images/Stripe.svg" class="stripe" />
+                    </a>
+                    <ul class="collapse list-unstyled" id="IndicateursSubmenu">
+                        <li>
+                            <a href="#">Indicateurs 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Indicateurs 2</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#SoldesSubmenu" data-toggle="collapse" aria-expanded="false" class="">
+                       <img src="/images/Soldes.svg" />
+                        Soldes
+                       <img src="//images/Stripe.svg" class="stripe" />
+                    </a>
+                    <ul class="collapse list-unstyled" id="SoldesSubmenu">
+                        <li>
+                            <a href="#">Gresteion des soldes</a>
+                        </li>
+                        <li>
+                            <a href="#">Ajuster in solde</a>
+                        </li>
+                        <li>
+                            <a href="#">Compteurs</a>
+                        </li>
+                        <li>
+                            <a href="#">Historique</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#RechercheSubmenu" data-toggle="collapse" aria-expanded="false" class="">
+                       <img src="/images/Recherche.svg" />
+                        Recherche
+                        <img src="/images/Stripe.svg" class="stripe" />
+                    </a>
+                    <ul class="collapse list-unstyled" id="RechercheSubmenu">
+                        <li>
+                            <a href="#">Recherche 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Recherche 2</a>
+                        </li>      
+                   </ul>
+                </li>        
+             </ul>
+             <img src="/images/Graphic.svg" style="position: relative; margin-top: 80px; bottom:0px;"/>
+        </nav>
+       
+       <!--Page 2-->
+    <nav role="navigation" id="page2" class="page2">
+      <div id="menuToggle">
+      <div class="manatime">
+        <img src="/images/Logo.svg" />
+
+      </div>
+      <div class="cards">
+        <div class="cards-list">
+            <div class="card 1">
+              <div class="card_image"> <img src="/images/Module_Planning.svg" /> </div>
+              <p class="card_title title-white">
+                Planning
+              </p>
+            </div>
+            
+              <div class="card 2">
+              <div class="card_image">
+                <img src="/images/Module_Absences.svg" />
+                </div>
+              <p class="card_title title-white">
+                Absences
+              </p>
+            </div>
+            
+            <div class="card 3">
+              <div class="card_image">
+                <img src="/images/Module_Heures.svg" />
+              </div>
+              <p class="card_title">
+                Heures
+              </p>
+            </div>
+              
+              <div class="card 4">
+              <div class="card_image" style="margin-top: 15px;">
+                <img src="/images/Module_NotedeFrais.svg" />
+                </div>
+              <p class="card_title">
+                Note de Farais
+              </p>
+              </div>
+
+              <div class="card 5">
+                <div class="card_image">
+                  <img src="/images/Module_Présence.svg" />
+                  </div>
+                <p class="card_title">
+                  Presence
+                </p>
+                </div>
+
+                <div class="card 6">
+                    <div class="card_image">
+                      <img src="/images/Module_Compétences.svg" />
+                      </div>
+                    <p class="card_title">
+                      Competences
+                    </p>
+                </div>
+
+                <div class="card 7">
+                    <div class="card_image">
+                      <img src="/images/Module_SalaireetPAie.svg" />
+                      </div>
+                    <p class="card_title">
+                      Salarie et Paie
+                    </p>
+                </div>
+
+                <div class="card 8">
+                    <div class="card_image">
+                      <img src="/images/Module_Entretiens.svg" />
+                      </div>
+                    <p class="card_title title-black">
+                      Entretiens
+                    </p>
+                </div>
+
+                <div class="card 9">
+                    <div class="card_image">
+                      <img src="/images/Module_Matériels.svg" />
+                      </div>
+                    <p class="card_title">
+                      Materiels
+                    </p>
+                </div>
+
+                <div class="card 10">
+                    <div class="card_image">
+                      <img src="/images/Mdule_Documents.svg" />
+                      </div>
+                    <p class="card_title">
+                      Documents
+                </p>
+                </div>
+
+                <div class="card 11">
+                    <div class="card_image">
+                      <img src="/images/Module_RH.svg" />
+                      </div>
+                    <p class="card_title">
+                      RH
+                </p>
+             </div>
+         </div>
+            </div>
+          </div> 
+          </nav>
+       
+
+       <!--Table page 1 -->
+       <div id="content">   
+        <table class="table table-striped table-main">
+            <thead>
+              <tr>
+                <th scope="col" class="long">Utilisateurs</th>
+                <th scope="col" class="long">Categorie</th>
+                <th scope="col">Periode</th>
+                <th scope="col">Solde actuel</th>
+                <th scope="col">Solde pris</th>
+                <th scope="col">Solde futur</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Darlene Menson Dujon</td>
+                <td><span class="orange-dot"></span>Conges payes</td>
+                <td>2020-2021</td>
+                <td>16</td>
+                <td>10</td>
+                <td>34</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Marlon Brandon</td>
+                <td><span class="blue-dot"></span>RTT</td>
+                <td>2020</td>
+                <td>3</td>
+                <td>25</td>
+                <td>20</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Darlene Menson Dujon</td>
+                <td><span class="orange-dot"></span>Conges payes</td>
+                <td>2020-2021</td>
+                <td>16</td>
+                <td>10</td>
+                <td>34</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Marlon Brandon</td>
+                <td><span class="blue-dot"></span>RTT</td>
+                <td>2020</td>
+                <td>3</td>
+                <td>25</td>
+                <td>20</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Darlene Menson Dujon</td>
+                <td><span class="orange-dot"></span>Conges payes</td>
+                <td>2020-2021</td>
+                <td>16</td>
+                <td>10</td>
+                <td>34</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Marlon Brandon</td>
+                <td><span class="blue-dot"></span>RTT</td>
+                <td>2020</td>
+                <td>3</td>
+                <td>25</td>
+                <td>20</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Darlene Menson Dujon</td>
+                <td><span class="orange-dot"></span>Conges payes</td>
+                <td>2020-2021</td>
+                <td>16</td>
+                <td>10</td>
+                <td>34</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Marlon Brandon</td>
+                <td><span class="blue-dot"></span>RTT</td>
+                <td>2020</td>
+                <td>3</td>
+                <td>25</td>
+                <td>20</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Darlene Menson Dujon</td>
+                <td><span class="orange-dot"></span>Conges payes</td>
+                <td>2020-2021</td>
+                <td>16</td>
+                <td>10</td>
+                <td>34</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Marlon Brandon</td>
+                <td><span class="blue-dot"></span>RTT</td>
+                <td>2020</td>
+                <td>3</td>
+                <td>25</td>
+                <td>20</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Darlene Menson Dujon</td>
+                <td><span class="orange-dot"></span>Conges payes</td>
+                <td>2020-2021</td>
+                <td>16</td>
+                <td>10</td>
+                <td>34</td>
+                <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Marlon Brandon</td>
+                <td><span class="blue-dot"></span>RTT</td>
+                <td>2020</td>
+                <td>3</td>
+                <td>25</td>
+                <td>20</td>
+                 <td>
+                    <img src="/images/Ajuster.svg" style="margin-left: 42px; margin-right: 45px;" />
+                    <img src="/images/Transferer.svg" style="margin-right: 45px;" />
+                    <img src="/images/Solder.svg"/>
+                </td>
+              </tr>
+              
+
+            </tbody>
+          </table>
+        
+       </div> 
+       </div>
+
+
+
+
+
+    
+
+    <!-- Boostrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script>
+$(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('.page2').toggleClass('active');
+                });
+            });
+    </script>
+
+<script>
+  $(document).ready(function () {
+                  $('#sidebarCollapse').on('click', function () {
+                      $('.table, .body, .navbar-content').toggleClass('active');
+                  });
+              });
+      </script>
+  
+
+
+</body>
+
+</html>
